@@ -1,4 +1,4 @@
-;;; editor-defaults.el --- Improve built-in defaults.  -*- lexical-binding: t; -*-
+;;; builtins.el --- Improve built-in defaults.  -*- lexical-binding: t; -*-
 ;;
 ;;; Commentary:
 ;;
@@ -103,6 +103,8 @@
   (fringe-mode -1))
 
 ;; Text scaling, with reasonaable global shortcuts.
+;;
+;; NOTE: Purcell has 'default-text-scale'; maybe look at that.
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 
@@ -115,5 +117,5 @@
 (set-face-attribute 'hl-line nil :background "gray26")
 
 ;;----------------------------------------------------------------------------
-(provide 'editor-defaults)
-;;; editor-defaults.el ends here
+(provide 'builtins)
+;;; builtins.el ends here
