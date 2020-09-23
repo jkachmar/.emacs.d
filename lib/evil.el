@@ -26,7 +26,12 @@
   ;;
   ;; This is mostly to allow me to see what evil-collection does and does not
   ;; modify while I'm still figuring things out.
-  (setq evil-collection-mode-list nil))
+  (setq evil-collection-mode-list
+        '(dired
+          magit)))
+
+(use-package evil-magit
+  :after (evil magit))
 
 ;;----------------------------------------------------------------------------
 (provide 'evil)

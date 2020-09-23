@@ -12,6 +12,7 @@
 (require 'initialization)
 (require 'builtins)
 (require 'evil)
+(require 'git)
 
 ;;----------------------------------------------------------------------------
 (provide 'init)
